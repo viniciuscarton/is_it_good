@@ -4,7 +4,7 @@ form.addEventListener('submit', function (event) {
     event.preventDefault();
 
     const movieName = document.querySelector('#search').value;
-    const apiUrl = `http://www.omdbapi.com/?apikey=26253782&t=${encodeURIComponent(movieName)}&tomatoes=true`;
+    const apiUrl = `http://www.omdbapi.com/?apikey=[your_key]&t=${encodeURIComponent(movieName)}&tomatoes=true`;
 
     fetch(apiUrl)
         .then(response => response.json())
